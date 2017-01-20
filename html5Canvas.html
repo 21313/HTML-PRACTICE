@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Practice</title>
+</head>
+<body>
+    <!--Create Canvas-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3">your browser not support HTML5 canvas elemnet.</canvas>
+    <canvas id="myCanvas1" width="300" height="100" style="border:1px solid #c3c3c3">your browser not support HTML5 canvas elemnet.</canvas>
+    <canvas id="myCanvas2" width="300" height="100" style="border:1px solid #c3c3c3">your browser not support HTML5 canvas elemnet.</canvas>
+    <script>
+        //step 1 : findout canvas using html DOM
+       var a = document.getElementById("myCanvas");
+       //step 2 : creat a drawing object for Canvas
+       var ax = a.getContext("2d");
+       //step 3 : Draw on the Canvas(finallly you can draw on canvas)
+       ax.fillStyle = "#FF0000";
+       //fillRect(x,y,width,height) method to draw a rectangle filled with
+       //the fill style on the canvas.
+       ax.fillRect(0,0,150,75);
+       //To Second Canvas , Draw a line
+       var b = document.getElementById("myCanvas1");
+       var bx = b.getContext("2d");
+        bx.moveTo(0,0);
+        bx.lineTo(300,100);
+        bx.stroke();
+        //To Third Canvas , Draw a Circle
+        var c = document.getElementById("myCanvas2");
+        var cx = c.getContext("2d");
+        cx.beginPath();
+        cx.arc(150,50,40,0,2*Math.PI);
+        cx.stroke();
+    </script>
+    
+
+</body>
+</html>

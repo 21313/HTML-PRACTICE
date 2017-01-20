@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Practice</title>
+</head>
+<body>
+   <form action="https://www.w3schools.com/action_page.php">
+       FirstName:
+       <br>
+       <input type="text" name="firstName" value="bilal">
+       <br>
+       LastName:
+       <br>
+       <input type="text" name="secondName" value="saleem">
+       <br><br>
+       <input type="submit" value="submit">
+       </form>
+       <select name="university">
+           <option value="ssuet">SSUET</option>
+           <option value="ned">NED</option>
+           <option value="ubit">KU</option>
+       </select>
+       <br><br>
+
+       <input type="submit" value="Submit">
+       <p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php"</p>
+       <br>
+       <textarea name="message" id="txt" cols="30" rows="10">
+           Input here!
+       </textarea>
+       </form> 
+
+       <!-- Form Element-->
+       <form oninput="x.value = parseInt(a.value)
+       + parseInt(b.value)">
+       0
+       <input type="range" id="a" >
+        <input type="number" id="b"  value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+       </form>
+       <form action="action_page.php">
+  Quantity (between 1 and 25):
+  <input type="number" name="quantity" min="1" max="100">
+  <input type="submit">
+</form>
+</body>
+</html>
